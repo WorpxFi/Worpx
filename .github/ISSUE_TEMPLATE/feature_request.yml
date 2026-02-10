@@ -1,0 +1,86 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for Worpx Protocol
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees: ["WorpxDeveloper"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature. Please provide as much detail as possible.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which component does this feature relate to?
+      options:
+        - SDK (@worpx/sdk)
+        - Skills Framework (@worpx/skills-core)
+        - Agent API
+        - CLI (@worpx/cli)
+        - Transaction Router
+        - Settlement Layer
+        - Wallet Management
+        - New Skill
+        - Documentation
+        - Infrastructure
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to your workflow?
+      options:
+        - Critical (blocking adoption)
+        - High (significant value)
+        - Medium (nice to have)
+        - Low (minor improvement)
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Describe the problem this feature would solve.
+      placeholder: I'm always frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your preferred solution.
+      placeholder: |
+        I would like to be able to...
+
+        Example API:
+        ```typescript
+        const result = await agent.newFeature({ ... });
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or workarounds you've considered.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other context, mockups, or references.
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to submit a pull request for this feature

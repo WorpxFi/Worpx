@@ -1,0 +1,25 @@
+{
+  "name": "@worpx/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the Worpx Protocol - agent-to-agent transactions and skill execution",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "author": "WorpxDeveloper",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WorpxFi/Worpx.git",
+    "directory": "packages/sdk"
+  },
+  "keywords": [
+    "worpx",
+    "agent-to-agent",
+    "defi",
+    "payments",
+    "skills",
+    "blockchain"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

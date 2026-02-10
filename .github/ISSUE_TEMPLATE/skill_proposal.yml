@@ -1,0 +1,89 @@
+name: Skill Proposal
+description: Propose a new skill for the Worpx ecosystem
+title: "[Skill]: "
+labels: ["skill", "proposal"]
+assignees: ["WorpxDeveloper"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose a new skill for Worpx agents. Skills are modular capabilities that extend agent functionality.
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill Name
+      description: A short, descriptive name for the skill.
+      placeholder: e.g., arbitrage-scanner, nft-minter, portfolio-rebalancer
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What category does this skill belong to?
+      options:
+        - Trading
+        - DeFi
+        - Analytics
+        - Payments
+        - Social
+        - Data
+        - Governance
+        - NFT
+        - Cross-Chain
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does this skill do? What problem does it solve for agents?
+    validations:
+      required: true
+
+  - type: textarea
+    id: api-design
+    attributes:
+      label: Proposed API
+      description: How would agents interact with this skill?
+      placeholder: |
+        ```typescript
+        const skill = new ArbitrageScannerSkill({
+          chains: ['base', 'ethereum'],
+          minProfitBps: 50,
+        });
+
+        agent.use(skill);
+
+        const opportunities = await agent.execute('scan-arbitrage', {
+          token: 'ETH',
+          amount: '1000',
+        });
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: chains
+    attributes:
+      label: Chain Support
+      description: Which chains does this skill need to interact with?
+      placeholder: e.g., Base, Ethereum, Solana
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: External Dependencies
+      description: Does this skill depend on any external protocols, APIs, or data sources?
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to implement this skill
+        - label: I have reviewed the Skills Development Guide

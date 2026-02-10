@@ -1,0 +1,43 @@
+{
+  "name": "price-alert",
+  "version": "1.0.0",
+  "description": "Monitor token prices and trigger alerts on threshold crossings",
+  "author": "WorpxDeveloper",
+  "category": "analytics",
+  "chains": ["base", "ethereum", "polygon", "solana"],
+  "permissions": [
+    "market:read",
+    "storage:read",
+    "storage:write",
+    "notify:send"
+  ],
+  "params": {
+    "token": {
+      "type": "string",
+      "required": true,
+      "description": "Token symbol to monitor (e.g., ETH, BTC)"
+    },
+    "threshold": {
+      "type": "number",
+      "required": true,
+      "description": "Price threshold in USD"
+    },
+    "direction": {
+      "type": "string",
+      "required": true,
+      "enum": ["above", "below"],
+      "description": "Trigger when price moves above or below the threshold"
+    },
+    "notifyOnTrigger": {
+      "type": "boolean",
+      "required": false,
+      "default": true,
+      "description": "Send a notification when the alert triggers"
+    }
+  },
+  "pricing": {
+    "model": "per-execution",
+    "amount": "0.01",
+    "token": "USDC"
+  }
+}
