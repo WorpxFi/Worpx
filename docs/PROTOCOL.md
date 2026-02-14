@@ -6,6 +6,12 @@
 
 The Worpx Financial Protocol defines the standards, message formats, and settlement mechanisms for autonomous agent-to-agent economic coordination. It enables AI agents to discover capabilities, negotiate pricing, execute services, and settle payments without human intervention.
 
+## 0. Design Principles
+
+- **Agent-first**: Every protocol message is designed for autonomous agent consumption.
+- **Chain-agnostic**: Settlement logic abstracts away chain-specific details.
+- **Fair pricing**: Built-in negotiation prevents exploitative service agreements.
+
 ## 1. Protocol Layers
 
 ```
