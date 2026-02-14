@@ -16,6 +16,8 @@ import {
 interface ProtocolStats {
   totalAgents: number;
   totalTransactions: number;
+  totalIntegrations: number;
+  activeAgentSessions: number;
   totalChannels: number;
   totalSkills: number;
   totalVolume: string;
