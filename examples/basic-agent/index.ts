@@ -8,6 +8,11 @@
  *   WORPX_API_KEY=your_key npx tsx examples/basic-agent/index.ts
  */
 
+/**
+ * Basic Agent Integration Example
+ * Demonstrates agent registration, skill listing, and cross-chain transfers.
+ * Requires a valid Worpx API key and funded wallet.
+ */
 import { WorpxAgent } from "@worpx/sdk";
 
 async function main() {
