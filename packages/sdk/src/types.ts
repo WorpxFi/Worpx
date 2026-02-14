@@ -98,3 +98,17 @@ export interface ProtocolStats {
   totalSkills: number;
   totalVolume: string;
 }
+
+export interface AgentIntegrationConfig {
+  platformId: string;
+  authMethod: "bearer" | "api_key" | "oauth2";
+  syncInterval?: number;
+  capabilities: string[];
+}
+
+export interface AgentConnectionStatus {
+  agentId: string;
+  platformId: string;
+  connected: boolean;
+  lastSyncAt: number | null;
+}
