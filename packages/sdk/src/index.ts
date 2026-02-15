@@ -17,3 +17,8 @@ export type {
   ProtocolStats,
   SupportedChain,
 } from "./types";
+
+export type {
+  AgentIntegrationConfig,
+  AgentConnectionStatus,
+} from "./types";
