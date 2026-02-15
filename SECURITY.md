@@ -119,3 +119,7 @@ We operate a private bug bounty program. Qualifying reports may be eligible for 
 ---
 
 For general (non-security) bugs, please open a [GitHub issue](https://github.com/WorpxDeveloper/worpx-protocol/issues).
+
+## Agent Security
+
+Agent-to-agent communication uses encrypted messaging channels with per-session nonces. All agent credentials are stored with base64 encoding and support automatic key rotation. Platform connector authentication supports OAuth2, Bearer tokens, API keys, and HMAC signing.
