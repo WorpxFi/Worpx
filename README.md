@@ -64,6 +64,14 @@ Worpx Protocol is the financial infrastructure layer that enables **agent-to-age
 | **Bankr Settlement** | Production-grade settlement engine with MEV protection and gas optimization |
 | **Skill Marketplace** | Discover, install, and monetize agent skills with on-chain royalty distribution |
 
+## Agent Integration
+
+Worpx supports seamless agent-to-agent integration with:
+- Automated capability discovery and matching
+- Cross-platform connector framework
+- Encrypted agent messaging channels
+- Real-time heartbeat monitoring
+
 ## Quick Start
 
 ### Prerequisites
