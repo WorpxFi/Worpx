@@ -360,3 +360,10 @@ import type {
 - [Skills Development](SKILLS.md) &mdash; Build custom skills
 - [Architecture](ARCHITECTURE.md) &mdash; System design overview
 - [Examples](../examples/) &mdash; Working code examples
+
+## Agent Integration
+
+The SDK provides built-in types for platform integration:
+
+\\n
+Use  to declare platform connections and  to monitor sync state.
