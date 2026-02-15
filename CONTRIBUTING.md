@@ -261,3 +261,11 @@ If you discover a security vulnerability, **do not** open a public issue. Instea
 ---
 
 Thank you for contributing to Worpx Protocol.
+
+## Agent Integration Contributions
+
+When contributing agent integration code:
+
+1. Follow the existing service pattern in \n2. Include proper TypeScript interfaces for all data structures
+3. Add state management with clear lifecycle transitions
+4. Ensure all agent IDs use  for uniqueness
