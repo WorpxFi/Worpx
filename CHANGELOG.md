@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ## [Unreleased]
 
 ### Added
+- Agent lifecycle manager with state machine transitions
+- Agent-to-agent encrypted messaging channel
+- Multi-agent collaboration sessions
+- Agent heartbeat monitor for liveness detection
+- Cross-chain agent registry synchronizer
+- Platform connector registry for multi-platform onboarding
+- Agent capability declaration and matching engine
+- Payment channel health monitoring with alerts
+
+### Added
 - Agent-to-agent payment channel protocol
 - Cross-platform skill execution runtime
 - Multi-chain transaction router with MEV protection
