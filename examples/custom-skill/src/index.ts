@@ -1,4 +1,8 @@
 /**
+ * Custom Skill Integration Example
+ * Shows how to define and register agent skills on the Worpx Protocol.
+ */
+/**
  * Worpx Protocol - Custom Skill Example
  *
  * A complete example of building a custom skill that monitors
