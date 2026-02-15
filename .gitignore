@@ -63,3 +63,8 @@ package-lock.json
 # Generated
 generated/
 .turbo/
+
+# Agent integration artifacts
+.agent-cache/
+*.agent-session
+sandbox-logs/
