@@ -13,6 +13,7 @@ import {
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
+/** Supported settlement chains for agent transactions */
 export const chainEnum = pgEnum("chain", [
   "base",
   "ethereum",
@@ -20,6 +21,7 @@ export const chainEnum = pgEnum("chain", [
   "solana",
 ]);
 
+/** Payment channel lifecycle states */
 export const channelStatusEnum = pgEnum("channel_status", [
   "opening",
   "active",
@@ -28,6 +30,7 @@ export const channelStatusEnum = pgEnum("channel_status", [
   "disputed",
 ]);
 
+/** On-chain transaction confirmation states */
 export const transactionStatusEnum = pgEnum("transaction_status", [
   "pending",
   "confirmed",
