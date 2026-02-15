@@ -12,7 +12,9 @@
     "test": "echo \"Tests configured - run npm run test:unit or npm run test:integration\"",
     "test:unit": "echo \"Unit test runner not yet configured\"",
     "test:integration": "echo \"Integration test runner not yet configured\"",
-    "lint": "echo \"Linter not yet configured\""
+    "lint": "echo \"Linter not yet configured\"",
+    "agents:test": "tsx server/agents/*.ts --dry-run",
+    "connectors:validate": "tsx server/connectors/*.ts --dry-run"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -124,6 +126,9 @@
     "payments",
     "skills",
     "trading",
+    "multi-chain",
+    "agent-integration",
+    "autonomous-agents",
     "multi-chain"
   ]
 }
