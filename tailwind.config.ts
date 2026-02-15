@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+/** Tailwind configuration for Worpx Protocol dashboard UI */
 export default {
   darkMode: ["class"],
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
