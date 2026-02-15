@@ -4,6 +4,7 @@ if (!process.env.DATABASE_URL) {
   throw new Error("DATABASE_URL, ensure the database is provisioned");
 }
 
+/** Drizzle ORM configuration for agent and protocol schema migrations */
 export default defineConfig({
   out: "./migrations",
   schema: "./shared/schema.ts",
